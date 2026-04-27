@@ -1,0 +1,27 @@
+INSERT INTO payments (payment_id, booking_id, payment_date, payment_type, payment_method, payment_amount, total_discount, status)
+VALUES 
+('PAYMENTID-8745', 'BOOKINGID-3451', '2026-02-19', 'Full payment', 'Cash', 5000.00, 0.00, 'Paid'),
+('PAYMENTID-1125', 'BOOKINGID-8663', '2026-02-19', 'Full payment', 'Online', 6200.00, 0.00, 'Paid'),
+('PAYMENTID-1869', 'BOOKINGID-1507', '2026-03-26', 'Full payment', 'Cash', 3800.00, 0.00, 'Paid'),
+('PAYMENTID-1778', 'BOOKINGID-9157', '2026-03-26', 'Full payment', 'Cash', 2500.00, 0.00, 'Paid'),
+('PAYMENTID-7109', 'BOOKINGID-6278', '2026-03-26', 'Full payment', 'Online', 2500.00, 0.00, 'Paid'),
+('PAYMENTID-8197', 'BOOKINGID-5678', '2026-03-10', 'Full payment', 'Cash', 5000.00, 0.00, 'Paid'),
+('PAYMENTID-7582', 'BOOKINGID-1993', '2026-03-10', 'Full payment', 'Cash', 5000.00, 0.00, 'Paid'),
+('PAYMENTID-1780', 'BOOKINGID-5836', '2026-03-21', 'Full payment', 'Online', 6200.00, 0.00, 'Paid'),
+('PAYMENTID-4980', 'BOOKINGID-5363', '2026-02-25', 'Full payment', 'Online', 6200.00, 0.00, 'Paid'),
+('PAYMENTID-4706', 'BOOKINGID-8072', '2026-03-24', 'Full payment', 'Cash', 7600.00, 0.00, 'Paid'),
+('PAYMENTID-4759', 'BOOKINGID-4598', '2026-02-06', 'Full payment', 'Credit_card', 5000.00, 0.00, 'Paid'),
+('PAYMENTID-4095', 'BOOKINGID-3391', '2026-02-19', 'Full payment', 'Credit_card', 6200.00, 0.00, 'Paid'),
+('PAYMENTID-3850', 'BOOKINGID-9573', '2026-02-19', 'Full payment', 'Credit_card', 5600.00, 0.00, 'Paid'),
+('PAYMENTID-2236', 'BOOKINGID-6279', '2026-02-23', 'Full payment', 'Cash', 5600.00, 0.00, 'Paid'),
+('PAYMENTID-9802', 'BOOKINGID-2896', '2026-02-24', 'Full payment', 'Cash', 6800.00, 0.00, 'Paid'),
+('PAYMENTID-7378', 'BOOKINGID-9548', '2026-02-17', 'Full payment', 'Online', 6200.00, 0.00, 'Paid'),
+('PAYMENTID-2940', 'BOOKINGID-2718', '2026-03-07', 'Full payment', 'Cash', 2500.00, 0.00, 'Paid'),
+('PAYMENTID-2858', 'BOOKINGID-6948', '2026-03-17', 'Full payment', 'Credit_card', 2500.00, 0.00, 'Paid'),
+('PAYMENTID-2136', 'BOOKINGID-4633', '2026-03-15', 'Full payment', 'Cash', 11200.00, 0.00, 'Paid'),
+('PAYMENTID-1240', 'BOOKINGID-1361', '2026-03-14', 'Full payment', 'Credit_card', 5000.00, 0.00, 'Paid'),
+('PAYMENTID-8838', 'BOOKINGID-6476', '2026-03-17', 'Full payment', 'Cash', 6800.00, 0.00, 'Paid'),
+('PAYMENTID-3995', 'BOOKINGID-6291', '2026-02-22', 'Full payment', 'Cash', 5000.00, 0.00, 'Paid'),
+('PAYMENTID-5498', 'BOOKINGID-8024', '2026-03-06', 'Full payment', 'Online', 5600.00, 0.00, 'Paid'),
+('PAYMENTID-4687', 'BOOKINGID-4563', '2026-03-17', 'Full payment', 'Cash', 5600.00, 0.00, 'Paid')
+;

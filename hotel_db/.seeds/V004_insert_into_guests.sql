@@ -1,0 +1,27 @@
+INSERT INTO guests (guest_id, profile_id, guest_type, is_member) 
+VALUES 
+('GUEST-8161', 'P001', 'check-in proxy', false),
+('GUEST-9165', 'P002', 'reservation holder', false),
+('GUEST-5252', 'P003', 'reservation holder', false),
+('GUEST-4701', 'P004', 'reservation holder', false),
+('GUEST-1240', 'P005', 'reservation holder', true),
+('GUEST-1134', 'P006', 'reservation holder', false),
+('GUEST-1286', 'P007', 'reservation holder', false),
+('GUEST-4441', 'P008', 'check-in proxy', false),
+('GUEST-1851', 'P009', 'check-in proxy', false),
+('GUEST-1790', 'P010', 'reservation holder', true),
+('GUEST-3953', 'P011', 'reservation holder', false),
+('GUEST-5337', 'P012', 'reservation holder', false),
+('GUEST-3245', 'P013', 'check-in proxy', false),
+('GUEST-1403', 'P014', 'reservation holder', false),
+('GUEST-6504', 'P015', 'reservation holder', true),
+('GUEST-6665', 'P016', 'reservation holder', false),
+('GUEST-9061', 'P017', 'reservation holder', true),
+('GUEST-2189', 'P018', 'reservation holder', false),
+('GUEST-6527', 'P019', 'check-in proxy', false),
+('GUEST-6617', 'P020', 'check-in proxy', false),
+('GUEST-6421', 'P021', 'check-in proxy', false),
+('GUEST-6230', 'P022', 'check-in proxy', false),
+('GUEST-2157', 'P023', 'check-in proxy', false),
+('GUEST-2913', 'P024', 'reservation holder', false)
+;
