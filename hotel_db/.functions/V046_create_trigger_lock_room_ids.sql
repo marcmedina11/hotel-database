@@ -1,0 +1,4 @@
+CREATE TRIGGER lock_room_ids
+BEFORE UPDATE ON rooms
+FOR EACH ROW
+EXECUTE FUNCTION block_id_updates();

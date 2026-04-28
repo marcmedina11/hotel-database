@@ -1,0 +1,4 @@
+CREATE TRIGGER lock_guest_ids
+BEFORE UPDATE ON guests
+FOR EACH ROW
+EXECUTE FUNCTION block_id_updates();
