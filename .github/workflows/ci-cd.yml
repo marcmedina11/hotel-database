@@ -33,14 +33,14 @@ jobs:
           PGPASSWORD=postgres psql -h localhost -U postgres -d mydb -f migrations/001_init.sql
 
       - name: Deploy migrations to production
-  env:
-    DB_HOST: ${{ secrets.DB_HOST }}
-    DB_PORT: ${{ secrets.DB_PORT }}
-    DB_NAME: ${{ secrets.DB_NAME }}
-    DB_USER: ${{ secrets.DB_USER }}
-    DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
-  run: |
-    PGPASSWORD=$DB_PASSWORD psql \
-      -h $DB_HOST -p $DB_PORT -U $DB_USER -d $DB_NAME \
-      -f migrations/001_init.sql
+        env:
+          DB_HOST: ${{ secrets.DB_HOST }}
+          DB_PORT: ${{ secrets.DB_PORT }}
+          DB_NAME: ${{ secrets.DB_NAME }}
+          DB_USER: ${{ secrets.DB_USER }}
+          DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
+        run: |
+            PGPASSWORD=$DB_PASSWORD psql \
+              -h $DB_HOST -p $DB_PORT -U $DB_USER -d $DB_NAME \
+              -f migrations/001_init.sql
     # repeat for other migration files
