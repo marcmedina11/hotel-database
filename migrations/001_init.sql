@@ -1,4 +1,4 @@
-CREATE TABLE test_runner (
+CREATE TABLE test_wawawe (
   id SERIAL PRIMARY KEY,
   test_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
