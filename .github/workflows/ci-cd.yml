@@ -2,7 +2,7 @@ name: CI/CD Pipeline
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "master" ]
   pull_request:
 
 jobs:
@@ -51,7 +51,7 @@ jobs:
           # Example: npm test, pytest, etc.
 
       - name: Deploy (optional)
-        if: github.ref == 'refs/heads/main'
+        if: github.ref == 'refs/heads/master'
         run: |
           echo "Deploy step goes here"
           # Example: ./deploy.sh
