@@ -1,4 +1,4 @@
-CREATE TABLE test_runs_data (
+CREATE TABLE test_runner (
   id SERIAL PRIMARY KEY,
   test_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
