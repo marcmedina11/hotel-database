@@ -28,40 +28,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Install PostgreSQL client
-        run: sudo apt-get install -y postgresql-client
-
       - name: Run migrations
         run: |
-          for file in migrations/*.sql; do
-            echo "Running $file"
-            psql -h localhost -U postgres -d mydb -f "$file"
-          done
-
-      - name: Run seeds
-        run: |
-          for file in seeds/*.sql; do
-            echo "Seeding $file"
-            psql -h localhost -U postgres -d mydb -f "$file"
-          done
-
-      - name: Run tests
-        run: |
-          echo "Place your test commands here"
-          # Example: npm test, pytest, etc.
-
-      - name: Deploy (optional)
-        if: github.ref == 'refs/heads/master'
-        run: |
-          echo "Deploy step goes here"
-          # Example: ./deploy.sh
-env:
-  DB_HOST: ${{ secrets.DB_HOST }}
-  DB_PORT: ${{ secrets.DB_PORT }}
-  DB_NAME: ${{ secrets.DB_NAME }}
-  DB_USER: ${{ secrets.DB_USER }}
-  DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
-run: |
-  PGPASSWORD=$DB_PASSWORD psql \
-    -h $DB_HOST -p $DB_PORT -U $DB_USER -d $DB_NAME \
-    -f migrations/001_init.sql
+          PGPASSWORD=postgres psql -h localhost -U postgres -d mydb -f migrations/001_init.sql
